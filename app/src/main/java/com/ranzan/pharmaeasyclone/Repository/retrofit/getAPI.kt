@@ -1,4 +1,4 @@
-package com.ranzan.pharmaeasyclone.Model.retrofit
+package com.ranzan.pharmaeasyclone.Repository.retrofit
 
 import retrofit2.Call
 import retrofit2.http.GET

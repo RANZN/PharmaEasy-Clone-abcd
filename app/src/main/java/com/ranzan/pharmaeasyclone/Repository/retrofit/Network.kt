@@ -1,4 +1,4 @@
-package com.ranzan.pharmaeasyclone.Model.retrofit
+package com.ranzan.pharmaeasyclone.Repository.retrofit
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
