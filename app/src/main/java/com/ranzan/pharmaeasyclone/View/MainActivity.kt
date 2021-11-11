@@ -6,12 +6,18 @@ import androidx.fragment.app.Fragment
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import com.ranzan.pharmaeasyclone.R
 import com.ranzan.pharmaeasyclone.View.Fragments.*
+import com.ranzan.pharmaeasyclone.ViewModel.Repo
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var repo: Repo
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        repo = Repo(MainActivity@ this)
+//        repo.fetchApi()
 
         bottomNavigation.add(MeowBottomNavigation.Model(0, R.drawable.home))
         bottomNavigation.add(MeowBottomNavigation.Model(1, R.drawable.healthcare))
